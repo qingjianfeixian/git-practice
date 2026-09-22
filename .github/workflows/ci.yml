@@ -32,4 +32,4 @@ jobs:
     # 4. 运行 pytest 测试用例
     - name: Run Pytest
       run: |
-        pytest -m backend/test_main.py
+        python -m pytest backend/test_main.py
