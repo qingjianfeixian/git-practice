@@ -13,3 +13,8 @@ def test_health_check():
     assert response.status_code == 200
     assert response.json()["status"] == "ok"
 
+def test_get_user():
+    response = client.get("/api/users")
+    assert response.status_code == 200
+    assert response.json() == {"username": "leaner", "role": "developer"}
+    

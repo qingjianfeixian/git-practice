@@ -17,3 +17,8 @@ def read_root():
 @app.get("/health")
 def health_check():
     return {"status":"ok"}
+
+@app.get("/api/user")
+def get_user():
+    return {"username":"leaner","role":"developer"}
+
